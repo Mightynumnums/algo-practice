@@ -1,0 +1,19 @@
+{
+  "name": "coding_problems",
+  "version": "1.0.0",
+  "description": "A collection of coding problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"src/**/*.spec.js\"",
+    "test-watch": "npm run test -- -w"
+  },
+  "author": "Aleks S",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^12.12.31",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "testem": "^3.0.3"
+  }
+}
