@@ -78,6 +78,11 @@ describe('More Than Zeros Problem', () => {
         const result = moreZeros(str)
         expect(result).to.eql(['a', 'b', 'd'])
       })
+      it('Returns a correct array given a string', () => {
+        const str = 'Z'
+        const result = moreZeros(str)
+        expect(result).to.eql([])
+      })
     })
   })
 
