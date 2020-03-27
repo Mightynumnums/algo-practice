@@ -8,7 +8,7 @@ const {
 
 
 
-describe('My Priority Q', () => {
+describe('My Priority Q Problem' , () => {
 
   describe('first test', () => {
     it('tests the sum', () => {

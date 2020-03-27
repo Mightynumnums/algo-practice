@@ -3,7 +3,7 @@ const {
   twoSum
 } = require('./twoSum.js')
 
-describe('twoSum', () => {
+describe('Two Sum Problem', () => {
 
   describe('twoSum returns a an array of arrays that add up to the sum', () => {
     it("It's a function", () => {
