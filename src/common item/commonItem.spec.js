@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const { containsCommon} = require('./commonItem')
+const { containsCommon } = require('./commonItem')
 
 describe('Common Item in an array problem', () => {
   describe('commonIem', () => {
