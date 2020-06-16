@@ -31,9 +31,9 @@ _Iterating through half a collection is still O(n) Two separate collections: O(a
 
 * Rule 2: Remove Constants*
 * Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be O(a*b)
-`+` for steps in order
+.. `+` for steps in order
 `*` for nested steps
-* Rule 4: Drop Non-dominant terms
+.. * Rule 4: Drop Non-dominant terms
 
 
 ## **What causes Space complexity?**
