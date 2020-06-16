@@ -13,7 +13,7 @@
 </br>
 `O(2^n)` **Exponential** - recursive algorithms that solves a problem of size N
 </br>
-`O(n!)` Factorial- you are adding a loop for every element
+`O(n!)` **Factorial** - you are adding a loop for every element
 </br>
 _Iterating through half a collection is still O(n) Two separate collections: O(a * b)_
 
