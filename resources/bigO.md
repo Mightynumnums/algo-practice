@@ -1,5 +1,5 @@
 ## **Big O Cheat Sheet: Big Os**
-:rocket::rocket::rocket::rocket::rocket::rocket:
+:rocket::rocket::rocket::rocket::rocket::rocket::rocket::rocket::rocket::rocket::rocket::rocket:
 
 `O(1)` Constant- no loops
 </br>
@@ -31,10 +31,8 @@ _Iterating through half a collection is still O(n) Two separate collections: O(a
 
 * Rule 2: Remove Constants*
 * Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be O(a*b)
-</br>
 `+` for steps in order
 `*` for nested steps
-</br>
  * Rule 4: Drop Non-dominant terms
 
 
