@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const { MyArray } = require('./arrayClass')
+const { MyArray } = require('./arrayClass.js')
 
 describe('MyArray Class', () => {
 	it('can create a new array from the class constructor', () => {
