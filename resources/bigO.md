@@ -1,4 +1,4 @@
-## **Big O Cheat Sheet: -Big Os-**
+## **Big O Cheat Sheet: Big Os**
 :rocket::rocket::rocket::rocket::rocket::rocket:
 
 `O(1)` Constant- no loops
@@ -15,16 +15,14 @@
 </br>
 `O(n!)` Factorial- you are adding a loop for every element
 </br>
-Iterating through half a collection is still O(n) Two separate collections: O(a * b)
+_Iterating through half a collection is still O(n) Two separate collections: O(a * b)_
 
 
 ## **What can cause time in a function?**
 
-Operations (+, -, *, /) Comparisons (<, >, ==)
-</br>
-Looping (for, while)
-</br>
-Outside Function call (function())
+* Operations (+, -, *, /) Comparisons (<, >, ==)
+* Looping (for, while)
+* Outside Function call (function())
 
 
 ## **Rule Book**
@@ -33,8 +31,8 @@ Outside Function call (function())
 
 * Rule 2: Remove Constants*
 * Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be O(a*b)
-+ for steps in order
-* for nested steps
+`+` for steps in order
+`*` for nested steps
 * Rule 4: Drop Non-dominant terms
 
 
