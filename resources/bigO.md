@@ -1,4 +1,4 @@
-##**Big O Cheat Sheet: -Big Os-**
+## **Big O Cheat Sheet: -Big Os-**
 :rocket::rocket::rocket::rocket::rocket::rocket:
 
 `O(1)` Constant- no loops
@@ -18,14 +18,14 @@
 Iterating through half a collection is still O(n) Two separate collections: O(a * b)
 
 
-##What can cause time in a function?
+## **What can cause time in a function?**
 
 Operations (+, -, *, /) Comparisons (<, >, ==)
 Looping (for, while)
 Outside Function call (function())
 
 
-##-Rule Book-
+## **Rule Book**
 
 *Rule 1:* Always worst Case
 *Rule 2:* Remove Constants*
@@ -35,7 +35,7 @@ Outside Function call (function())
 *Rule 4:* Drop Non-dominant terms
 
 
-##What causes Space complexity?
+## **What causes Space complexity?**
 
 *Variables*
 *Data Structures Function Call Allocations*
