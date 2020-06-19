@@ -62,4 +62,22 @@ describe('My Hash Table', () => {
       	expect(result).to.eql(['tea','grapes', 'apples'])
     })
   })
+
+    describe('Has a VALUES method, which returns all of the values from all of the keys', () => {
+    it('Returns an array', () => {
+      	let newHashTable = new HashTable(5)
+      	newHashTable.set('grapes', 5)
+      	newHashTable.set('apples', 22)
+      	let result = newHashTable.values()
+      	expect(Array.isArray(result)).to.eql(true)
+    })
+    it('Returns an array containing all the values from the bucket address', () => {
+      	let newHashTable = new HashTable(5)
+      	newHashTable.set('grapes', 5)
+      	newHashTable.set('apples', 22)
+      	newHashTable.set('tea', 0)
+      	let result = newHashTable.values()
+      	expect(result).to.eql([0,5,22])
+    })
+  })
 })

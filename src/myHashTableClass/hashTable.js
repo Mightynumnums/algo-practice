@@ -52,6 +52,16 @@ class HashTable {
 		}
 		return keysArray
 	}
+
+	values() {
+		let valuesArray = []
+		for(let i = 0; i < this.data.length; i++) {
+			if (this.data[i]) {
+				valuesArray.push(this.data[i][0][1])
+			}
+		}
+		return valuesArray
+	}
 }
 
 module.exports = {
