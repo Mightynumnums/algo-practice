@@ -1,33 +1,16 @@
-const expect = require('chai').expect
-const {
-  Item,
-  PQ,
-  simple
+const expect = require('chai').expect;
+const { Item, PQ, simple } = require('./myPriorityQ.js');
 
-} = require('./myPriorityQ.js')
-
-
-
-describe('My Priority Q Problem' , () => {
-
-  describe('first test', () => {
-    it('tests the sum', () => {
-      const num = 2
-      const result = simple(2)
-      expect(result).to.eql(4)
-    })
-  })
-  //add real tests here
-
-
-
-})
-
-
-
-
-
-
+describe('My Priority Q Problem', () => {
+	describe('first test', () => {
+		it('tests the sum', () => {
+			const num = 2;
+			const result = simple(2);
+			expect(result).to.eql(4);
+		});
+	});
+	//add real tests here
+});
 
 // let pqueu = new PQ()
 // console.log(pqueu)

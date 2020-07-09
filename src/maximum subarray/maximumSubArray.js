@@ -8,33 +8,32 @@
   Explanation: [4,-1,2,1] has the largest sum = 6.
 */
 
-const maxSubArray = function(nums) {
+const maxSubArray = function (nums) {
 	if (!Array.isArray(nums)) {
-		throw new Error('Uh Oh!')
+		throw new Error('Uh Oh!');
 	}
-
 	if (nums.length === 1) {
-		return nums[0]
+		return nums[0];
 	}
 	if (!nums.length) {
-		return 0
+		return 0;
 	}
-	let largest = nums[0]
-	let bestAtThisTime = -Infinity
+	let largest = nums[0];
+	let bestAtThisTime = -Infinity;
 	for (let i = 0; i < nums.length; i++) {
-		let value = nums[i]
+		let value = nums[i];
 		if (bestAtThisTime < 0) {
-			bestAtThisTime = value
+			bestAtThisTime = value;
 		} else {
-			bestAtThisTime += value
+			bestAtThisTime += value;
 		}
 		if (bestAtThisTime > largest) {
-			largest = bestAtThisTime
+			largest = bestAtThisTime;
 		}
 	}
-	return largest
+	return largest;
 };
 
 module.exports = {
-	maxSubArray
-}
+	maxSubArray,
+};

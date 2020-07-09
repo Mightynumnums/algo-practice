@@ -1,47 +1,50 @@
 class Item {
 	constructor(value, priority) {
-		this.value = value
-		this.priority = priority
+		this.value = value;
+		this.priority = priority;
 	}
 }
 
 class PQ {
 	constructor() {
-		this.data = []
+		this.data = [];
 	}
 
-		add(value, priority) {
-			let queueElem = new Item(value, priority)
-			let contains = false
+	add(value, priority) {
+		let queueElem = new Item(value, priority);
+		let contains = false;
 
-			for (let i = 0; i < this.data.length; i++) {
-				let itemPriority = this.data[i].priority
-				if (itemPriority > queueElem.priority) {
-					this.data.splice(i, 0, queueElem)
-					contains = true
-					break;
-				}
-			}
-			if(!contains) {
-				this.data.push(queueElem)
+		for (let i = 0; i < this.data.length; i++) {
+			let itemPriority = this.data[i].priority;
+			if (itemPriority > queueElem.priority) {
+				this.data.splice(i, 0, queueElem);
+				contains = true;
+				break;
 			}
 		}
-
-		pop() {
-			console.log('Return the itme w the most priority',this.data[this.data.length-1])
-			return this.data[this.data.length-1];
+		if (!contains) {
+			this.data.push(queueElem);
 		}
-  }
+	}
 
-  const simple = (num) => {
-    return num + 2
-  }
+	pop() {
+		console.log(
+			'Return the itme w the most priority',
+			this.data[this.data.length - 1]
+		);
+		return this.data[this.data.length - 1];
+	}
+}
 
-  module.exports = {
-    Item,
-    PQ,
-    simple
-  }
+const simple = (num) => {
+	return num + 2;
+};
+
+module.exports = {
+	Item,
+	PQ,
+	simple,
+};
 
 // let pqueu = new PQ()
 // console.log(pqueu)
