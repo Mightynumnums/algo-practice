@@ -7,11 +7,11 @@ class Node {
 
 class LinkedList {
 	constructor(value) {
-		;(this.head = {
+		this.head = {
 			value: value,
 			next: null,
-		}),
-			(this.tail = this.head)
+		}
+		this.tail = this.head
 		this.length = 1
 	}
 
