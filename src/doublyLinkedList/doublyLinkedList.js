@@ -74,10 +74,38 @@ class DoublyLinkedList {
 	}
 
 	remove(index) {
-		let leader = this.traverseToIndex(index - 1)
-		let nodeToRemove = leader.next
-		leader.next = nodeToRemove.next
-		this.length--
+		if (this.head === null || index > this.length - 1) {
+			throw new RangeError(`Index ${index} does not exist in the list.`)
+		}
+
+		if (index === 0) {
+			if (this.head === null) {
+				this.tail = null
+				this.length--
+			} else {
+				this.head.value = null
+				this.head.previous = null
+				this.head.next = null
+				this.length--
+			}
+			return this
+		}
+
+		let current = this.head
+		let i = 0
+		while (current !== null && i < index) {
+			current = current.next
+			i++
+		}
+		if (current !== null) {
+			current.prev.next = current.next
+		}
+		if (this.tail === current) {
+			this.tail = current.prev
+		} else {
+			current.next.prev = current.prev
+			this.length--
+		}
 		return this
 	}
 }
