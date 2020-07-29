@@ -171,4 +171,25 @@ describe('Doubly Linked List', () => {
 			expect(() => newDList.remove(9)).to.throw()
 		})
 	})
+	describe('REVERSE Method', () => {
+		it('If there is only one node, returns that node', () => {
+			const newDList = new DoublyLinkedList(2)
+			let result = newDList.reverse()
+			expect(result).to.eql({ value: 2, next: null, prev: null })
+		})
+		it('Reverses the Doubly Linked List', () => {
+			const newDList = new DoublyLinkedList(2)
+			newDList.append('lime')
+			newDList.append('cherry')
+			let result = newDList.reverse()
+			expect(result.tail.value).to.eql(2)
+		})
+		it('Reverses the Doubly Linked List', () => {
+			const newDList = new DoublyLinkedList(2)
+			newDList.append('lime')
+			newDList.append('cherry')
+			let result = newDList.reverse()
+			expect(result.head.value).to.eql('cherry')
+		})
+	})
 })
