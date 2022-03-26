@@ -14,7 +14,7 @@
     "@types/node": "^12.12.31",
     "chai": "^4.2.0",
     "chai-spies": "^1.0.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "mocha": "^7.1.1",
     "sinon": "^9.0.2",
     "testem": "^3.0.3"
